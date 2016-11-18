@@ -11,8 +11,6 @@
 !.keep
 /log/*
 /tmp/*
-config/database.yml
-config/secrets.yml
 .idea
 data/*
 !data/.keep
