@@ -2,6 +2,7 @@
 
 Ready to go development Rails / MySQL / Redis stack with MySQL and Redis, based on Docker.
 UIKit CSS framework is used.
+
 ### Docker
 * [Linux](https://docs.docker.com/engine/installation/)
 * [OSX](https://docs.docker.com/docker-for-mac/)
