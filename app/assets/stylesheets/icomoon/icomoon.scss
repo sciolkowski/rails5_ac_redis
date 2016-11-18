@@ -1,0 +1,99 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  font-url('icomoon.eot?tswbe4');
+  src:  font-url('icomoon.eot?tswbe4#iefix') format('embedded-opentype'),
+    font-url('icomoon.ttf?tswbe4') format('truetype'),
+    font-url('icomoon.woff?tswbe4') format('woff'),
+    font-url('icomoon.svg?tswbe4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mag-icon-"], [class*=" mag-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mag-icon-address {
+  &:before {
+    content: $mag-icon-adress;
+  }
+}
+.mag-icon-arrow {
+  &:before {
+    content: $mag-icon-arrow;
+  }
+}
+.mag-icon-contact {
+  &:before {
+    content: $mag-icon-contact;
+  }
+}
+.mag-icon-diagnostyka {
+  &:before {
+    content: $mag-icon-diagnostyka;
+  }
+}
+.mag-icon-geometria {
+  &:before {
+    content: $mag-icon-GEOMETRIA;
+  }
+}
+.mag-icon-hamulce {
+  &:before {
+    content: $mag-icon-hamulce;
+  }
+}
+.mag-icon-klima {
+  &:before {
+    content: $mag-icon-klima;
+  }
+}
+.mag-icon-klima-naprawa {
+  &:before {
+    content: $mag-icon-KLIMA_NAPRAWA;
+  }
+}
+.mag-icon-mail {
+  &:before {
+    content: $mag-icon-mail;
+  }
+}
+.mag-icon-phone {
+  &:before {
+    content: $mag-icon-phone;
+  }
+}
+.mag-icon-rozrzad {
+  &:before {
+    content: $mag-icon-rozrzad;
+  }
+}
+.mag-icon-sprzeglo {
+  &:before {
+    content: $mag-icon-sprzeglo;
+  }
+}
+.mag-icon-time {
+  &:before {
+    content: $mag-icon-time;
+  }
+}
+.mag-icon-zawieszenie {
+  &:before {
+    content: $mag-icon-zawieszenie;
+  }
+}
+

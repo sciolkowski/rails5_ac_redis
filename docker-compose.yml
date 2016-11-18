@@ -1,0 +1,24 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/home/acredisrails5
+    ports:
+      - "3000:3000"
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: acredisrails5_development
+      MYSQL_USER: acredisrails5
+      MYSQL_PASSWORD: acredisrails5
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  redis:
+    image: redis:3.2.5
+    ports:
+      - "6379:6379"

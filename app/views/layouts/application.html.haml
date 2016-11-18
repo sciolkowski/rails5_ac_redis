@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}/
+    %meta{description: 'Rails 5 / MySQL / Redis / ActionCable'}
+    = render 'favicon'
+    %title= 'AC Redis Rails 5'
+    = csrf_meta_tags
+    = stylesheet_link_tag 'base', media: 'all'
+  %body{ data: { controller: controller_name, action: action_name } }
+    = render 'shared/header'
+    = yield
+    = render 'shared/footer'
+    = javascript_include_tag 'application'
+  = stylesheet_link_tag    'application', media: 'all'
+  -# Sample Google Fonts
+  -#:css
+    @import url('https://fonts.googleapis.com/css?family=Exo:700,900|Open+Sans:300,400,600,700&subset=latin-ext');
